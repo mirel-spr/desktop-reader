@@ -1,0 +1,26 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HalachaNotes"
+        xmlns:uc="clr-namespace:HalachaNotes.Views"
+        xmlns:Views="clr-namespace:HalachaNotes" x:Class="HalachaNotes.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowState="Maximized">
+    <Grid Margin="12,0,-12.4,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <uc:TextPanel Grid.Row="1" x:Name="txtTextPanel" Title="Enter title:" MaxLength="30" Height="50"/>
+        <uc:OptionsPanel x:Name="pnlOptionsPanel"/>
+        <!--<TextBlock Grid.Row="1" Grid.Column="0" x:Name="txtMainReader" HorizontalAlignment="Left" Margin="40,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="375" Width="300"/>-->
+        <!--<TextBlock Grid.Row="1" Grid.Column="1" Margin="535,250,-0.4,0"><Run>Hi!!!</Run></TextBlock>-->
+
+    </Grid>
+</Window>
